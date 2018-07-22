@@ -1,3 +1,3 @@
 package de.lathspell.test.model
 
-data class Person(val id: Long, val name: String)
+data class Person(var id: Long = 0, var name: String = "")

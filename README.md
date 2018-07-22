@@ -19,3 +19,10 @@ The SpringBoot Actuator module provides a mechanism to register URLs for health 
 
 * <http://localhost:8080/actuator/health>  - Returns "status=UP" as JSON
 
+Tests
+-----
+
+Different HTTP Client libaries testet:
+* Spring "TestRestTemplate" was more or less ok
+* "Retrofit" was not as good; easy to forget .execute()
+* "Fuel" could not be convinced to serialize a class to JSON even with the "fuel-jackson" dependency
